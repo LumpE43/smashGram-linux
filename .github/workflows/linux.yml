@@ -128,7 +128,8 @@ jobs:
           -D TDESKTOP_API_HASH="4de79c3e2611b4a42131565e6602af54" \
           -D DESKTOP_APP_DISABLE_AUTOUPDATE=OFF \
           -D DESKTOP_APP_DISABLE_CRASH_REPORTS=OFF \
-          -D CMAKE_BUILD_PARALLEL_LEVEL=2 \
+          -D CMAKE_BUILD_PARALLEL_LEVEL=1 \
+          -D CMAKE_BUILD_TYPE=Debug \
           $DEFINE
 
       - name: Check.
