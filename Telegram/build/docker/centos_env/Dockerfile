@@ -756,6 +756,7 @@ RUN git clone -b v$QT --depth=1 https://github.com/qt/qt5.git \
 		-DFEATURE_icu=OFF \
 		-DFEATURE_xcb_sm=OFF \
 		-DFEATURE_eglfs=OFF \
+		-DFEATURE_egl=ON \
 		-DINPUT_dbus=runtime \
 		-DINPUT_openssl=linked \
 	&& cmake --build build \
