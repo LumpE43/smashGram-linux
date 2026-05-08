@@ -131,6 +131,7 @@ jobs:
           -D CMAKE_EXE_LINKER_FLAGS="-Wl,--no-keep-memory" \
           -D CMAKE_JOB_POOLS="link=1" \
           -D CMAKE_JOB_POOL_LINK=link \
+          -D DESKTOP_APP_DISABLE_X11_INTEGRATION=ON \
           -D CMAKE_BUILD_TYPE=Debug \
           $DEFINE
 
